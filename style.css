@@ -5,6 +5,10 @@
 
 body {
 	margin: 0;
+	background-image: url('media/back.jpg');
+	  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 :root {
@@ -30,7 +34,7 @@ body {
 	position: absolute;
 	top: var(--hambueger-margin);
 	left: var(--hambueger-margin);
-	z-index: 2;
+	z-index: 100;
 	cursor: pointer;
 }
 
@@ -52,12 +56,16 @@ body {
 }
 
 .hamburger-menu:has(input:checked)::before {
-	width: 40px;
+	margin-left: 10px;
+	transform: rotate(45deg);
+	width: 30px;
 	transition: rotate var(--animation-timing) background-color var(--animation-timing);
 }
 
 .hamburger-menu:has(input:checked)::after {
-	width: 40px;
+	margin-left: 10px;
+	transform: rotate(-45deg);
+	width: 30px;
 	transition: rotate var(--animation-timing) background-color var(--animation-timing);
 }
 
@@ -78,11 +86,13 @@ body {
 .sidebar {
 	transition: translate var(--animation-timing);
 	padding-top: 20px;
-	background-color: rgba(32,32,32, 0.3);
+	padding-bottom: 20px;
+	background-color: rgba(32,32,32, 0.9);
 	color: var(--background);
 	width: 100%;
 	display: none;
 	text-align: center;
+	z-index: 99;
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
@@ -92,15 +102,12 @@ body {
 }
 
 .test {
-	padding-top: 20px;
+	padding-top: 0px;
 }
 
-article {
-	max-width: 1000px;
+.art {
 	margin-left: auto;
 	margin-right: auto;
-	border-left: solid 5px black;
-	border-right: solid 5px black;
 }
 
 header {
@@ -114,6 +121,34 @@ header {
 .caput {
 	width: 100%;
 	background: rgb(233,121,121);
-background: rgb(246,188,188);
-background: linear-gradient(90deg, rgba(246,188,188,1) 0%, rgba(242,249,212,1) 18%, rgba(216,255,211,1) 84%, rgba(177,233,245,1) 100%);
+	background: rgb(246,188,188);
+	background: linear-gradient(90deg, rgba(246,188,188,1) 0%, rgba(242,249,212,1) 18%, rgba(216,255,211,1) 84%, rgba(177,233,245,1) 100%);
+	opacity: 85%;
+	position: sticky;
+	top: 0;
+	z-index: 99;
+}
+
+.test img {
+	display: inline;
+	position: relative;
+	top: 0px;
+	z-index: 0;
+}
+
+.cover {
+	display: block;
+	position: absolute;
+	top: 300px;
+	z-index: 6;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cover a {
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	border: 1px solid white;
 }
