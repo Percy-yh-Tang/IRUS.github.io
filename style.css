@@ -167,3 +167,108 @@ header {
 	text-align: center;
 	margin-top: 0px;
 }
+
+.wel-2 {
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0px;
+}
+
+@media screen and (min-width: 501px) {
+	.wel {
+		display: none;
+	}
+	
+	.wel-2 {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.wel {
+		display: block;
+	}
+	
+	.wel-2 {
+		display: none;
+	}
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: white;
+	font-family: Noto Sans;
+	font-size: 25px;
+	width: 1000px;
+}
+
+.sidebar a:hover {
+	color: Black;
+	background-color: white;
+}
+
+hr {
+	border: 0px solid rgba(32,32,32, 0.9);
+	margin-top: 3px;
+	margin-bottom: 1px;
+}
+
+.text {
+	background-color: rgba(255,255,102,0.5);
+	text-align: left;
+	padding-left: 100px;
+	width: 50%;
+}
+
+.text-mobile {
+	background-color: rgba(255,255,102,0.5);
+	text-align: center;
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.text h1 {
+	color: black;
+	font-size: 100px;
+	font-family: Noto Sans;
+	font-weight: bold;
+}
+
+.text-mobile h1 {
+	color: black;
+	font-size: 10px;
+	font-family: Noto Sans;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+	.pc {
+		display: none;
+	}
+	
+	.mobile {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 501px) {
+	.pc {
+		display: block;
+	}
+	
+	.mobile {
+		display: none;
+	}
+}
+
+.text-mobile button {
+	border: 0px solid blue;
+	border-radius: 4px;
+	font-family: Noto Sans;
+	height: 40px;
+	background-color: rgba(51,153,255,0.5);
+}
