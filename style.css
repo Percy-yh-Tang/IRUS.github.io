@@ -125,10 +125,11 @@ header {
 	background: rgb(233,121,121);
 	background: rgb(246,188,188);
 	background: linear-gradient(90deg, rgba(246,188,188,1) 0%, rgba(242,249,212,1) 18%, rgba(216,255,211,1) 84%, rgba(177,233,245,1) 100%);
-	opacity: 85%;
+	opacity: 1;
 	position: sticky;
 	top: 0;
 	z-index: 99;
+	border-bottom: 2px solid black;
 }
 
 .test img {
@@ -200,13 +201,12 @@ header {
 .sidebar a {
 	text-decoration: none;
 	color: white;
-	font-family: Serif;
+	font-family: georgia, serif;
 	font-size: 25px;
 }
 
 .sidebar a:hover {
-	color: Black;
-	background-color: white;
+	font-weight: bold;
 }
 
 hr {
@@ -216,10 +216,9 @@ hr {
 }
 
 .text {
-	background-color: rgba(255,255,102,0.5);
+	background-color: rgba(255,255,102,0.9);
 	text-align: center;
 	padding-bottom: 20px;
-	width: 50%;
 }
 
 .text-mobile {
@@ -233,7 +232,7 @@ hr {
 .text h2 {
 	color: black;
 	font-size: 50px;
-	font-family: Serif;
+	font-family: georgia, serif;
 	font-weight: bold;
 	padding: 0;
 }
@@ -274,9 +273,52 @@ hr {
 }
 
 .text button {
-	border: 1px solid white;
-	border-radius: 2px;
-	font-family: Serif;
+	border: 1px solid black;
+	font-family: georgia, serif;
+	font-size: 20px;
 	height: 40px;
-	background-color: rgba(51,153,255,0.5);
+	background-color: rgba(255,255,102,0.5);
+}
+
+.hi button {
+	border: 1px solid black;
+	font-family: georgia, serif;
+	font-size: 20px;
+	height: 40px;
+	background-color: rgba(153,255,153,0.9);
+}
+
+.hi {
+	background-color: rgba(153,255,153,0.8);
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+
+
+button:hover {
+	font-weight: bold;
+}
+
+.act-text {
+	background-color: rgba(255,153,255,0.5);
+	text-align: center;
+	padding-bottom: 20px;
+	font-family: georgia, serif;
+	font-size: 35px;
+}
+
+.act-text button {
+	border: 1px solid black;
+	font-family: georgia, serif;
+	font-size: 20px;
+	height: 40px;
+	background-color: rgba(255,153,255,0.3);
+}
+
+.small td {
+	width: 33%;
+	padding: 10px;
+	font-family: georgia, serif;
+	font-size: 15px;
 }
